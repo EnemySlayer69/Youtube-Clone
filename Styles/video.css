@@ -1,0 +1,137 @@
+.videos {
+  display: grid;
+  flex: 1;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+  grid-template-columns: repeat(3, minmax(225px, 1fr));
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 10px;
+}
+
+@media screen and (min-width: 1300px) {
+  .videos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 880px) and (max-width: 1299px) {
+  .videos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .videos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 624px) {
+  .videos {
+    grid-template-columns: 1fr;
+  }
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video-duration {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  bottom: 8px;
+  right: 4px;
+}
+
+.thumbnail-row {
+  position: relative;
+}
+
+.profile-picture {
+  width: 36px;
+  border-radius: 50%;
+}
+
+.video-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.video-stats,
+.video-author {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+}
+
+/* .videos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        margin-bottom: 2000px;
+      } */
+
+/* .video-preview {
+        display: block;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        border-style: solid;
+        border-color: black;
+        border-width: 2px;
+      } */
+
+/* .thumbnail {
+        width: 100%;
+        margin-bottom: 0; */
+/* border-radius: 5px; */
+/* display: inline-block; */
+/* height: 1fr; */
+/* object-fit: contain; */
+/* object-position: center; */
+/* } */
+
+/* .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+      } */
+
+/* .channel-picture { */
+/* display: inline-block; */
+/* width: 50px; */
+/* vertical-align: top; */
+/* background-color: gray; */
+/* } */
+
+/* .profile-picture {
+        width: 40px;
+        border-radius: 50%; */
+/* vertical-align: top; */
+/* } */
+
+/* .video-info {
+        display: inline-block;
+        width: 200px;
+        background-color: gray;
+      } */
+
+/* .video-author {
+        margin-bottom: 4px;
+      }
+
+      .video-title {
+        margin-top: 0;
+      } */
